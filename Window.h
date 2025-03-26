@@ -59,8 +59,10 @@ struct Window {
      * Print all options of this window
      */
     void print() {
-        std::cout << title << "\n";
-        std::cout << "--------------------------------------------" << "\n";
+        std::cout << std::endl;
+        std::cout << " +------------------------------------------" << "\n";
+        std::cout << " |  " << title << "\n";
+        std::cout << "-+------------------------------------------" << "\n";
         for (size_t i = 0; i < size; i++) {
             std::cout << i + 1 << "| " << options[i].text << "\n";
         }
